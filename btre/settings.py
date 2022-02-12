@@ -147,4 +147,7 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
 
-# Email config
+try:
+    from .local_settings import *
+except ImportError:
+    pass
